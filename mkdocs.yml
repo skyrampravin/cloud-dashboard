@@ -1,0 +1,17 @@
+site_name: C&I Team Dashboard
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - Team: team.md
+  - Updates: updates.md
+  - Tickets: tickets.md
+  - Leaves Tracker: tracker.md
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/chart.js    # External library via CDN
+  - assets/js/dashboard.js                  # Your custom JavaScript file
+theme:
+  name: material
+  logo: assets/logo.png
+repo_url: https://github.com/skyrampravin/team-dashboard
+# ...existing code...
