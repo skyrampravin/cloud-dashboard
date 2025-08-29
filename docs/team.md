@@ -18,7 +18,7 @@
     - Vasanth Kavimani
 
 ???+ info "ITALY DEVOPS"
-    - Agilan kaamash
+    - Agilan Kaamash
     - Rampravin A R
 
 ???+ info "TEAM MANAGER"
