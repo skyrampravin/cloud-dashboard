@@ -10,8 +10,15 @@ nav:
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/chart.js    # External library via CDN
   - assets/js/dashboard.js                  # Your custom JavaScript file
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - javascripts/tablesort.js
 theme:
   name: material
   logo: assets/logo.png
+markdown_extensions:
+  - admonition           # callouts
+  - pymdownx.details     # makes callouts collapsible (???)
+  - pymdownx.superfences # allows rich content inside callouts
+  - def_list             # (optional) nice team: members formatting
 repo_url: https://github.com/skyrampravin/team-dashboard
 # ...existing code...
