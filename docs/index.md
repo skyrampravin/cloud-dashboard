@@ -1,4 +1,4 @@
-# Welcome to our Team Dashboard 
+# Welcome to our CLOUD AND INFRA Team Dashboard 
 
 A centralized hub crafted to give you a complete picture of our team’s progress, priorities, and planning. Here’s what you’ll find:
 
@@ -16,4 +16,7 @@ Clearly segmented next steps, assigned tasks, and roadmaps to guide our projects
 
 ## Weekly Updates
 Regular summaries of accomplishments, upcoming goals, dependencies, and notable challenges—keeping everyone informed and accountable.
+
+## Upcoming Team Activities
+A calendar view of important activites planned for the team in the near future.   
 

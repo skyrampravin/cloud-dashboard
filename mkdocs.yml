@@ -1,24 +1,49 @@
 site_name: C&I Team Dashboard
 theme:
   name: material
+  logo: assets/logo.png
 nav:
   - Home: index.md
-  - Team: team.md
+  - Team:
+    - Technology Products:
+      - Overview: team/details.md
+      - Tickets: team/tickets.md
+      - Leave Tracker: team/leave-tracker.md
+    - Italy Infra: team/italy-infra.md
+    - Network: team/network.md
+  - Org Chart: orgchart.md
   - Updates: updates.md
-  - Tickets: tickets.md
-  - Leaves Tracker: tracker.md
+  - Documents: documents.md
+  - Newsletter: newsletter.md
+
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/chart.js    # External library via CDN
   - assets/js/dashboard.js                  # Your custom JavaScript file
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
   - javascripts/tablesort.js
-theme:
-  name: material
-  logo: assets/logo.png
+
+plugins:
+  - search
+  - mermaid2
+
+# markdown_extensions:
+#   - admonition           # callouts
+#   - pymdownx.details     # makes callouts collapsible (???)
+#   - pymdownx.superfences # allows rich content inside callouts
+#   - def_list             # (optional) nice team: members formatting
+
 markdown_extensions:
   - admonition           # callouts
   - pymdownx.details     # makes callouts collapsible (???)
   - pymdownx.superfences # allows rich content inside callouts
   - def_list             # (optional) nice team: members formatting
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - def_list
+
+
 repo_url: https://github.com/skyrampravin/team-dashboard
 # ...existing code...
