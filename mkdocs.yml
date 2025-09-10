@@ -2,6 +2,7 @@ site_name: C&I Team Dashboard
 theme:
   name: material
   logo: assets/logo.png
+  favicon: assets/images/logo.png
 nav:
   - Home: index.md
   - Team:
@@ -11,9 +12,9 @@ nav:
       - Leave Tracker: team/leave-tracker.md
     - Italy Infra: team/italy-infra.md
     - Network: team/network.md
-  - Org Chart: orgchart.md
   - Updates: updates.md
   - Documents: documents.md
+  - Org Chart: orgchart.md
   - Newsletter: newsletter.md
 
 extra_javascript:
