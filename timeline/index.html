@@ -9,6 +9,10 @@
       
       
       
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../team/details/">
       
       
       <link rel="icon" href="../assets/images/logo.png">
@@ -16,7 +20,7 @@
     
     
       
-        <title>Tracker - C&I Team Dashboard</title>
+        <title>Timeline - C&I Team Dashboard</title>
       
     
     
@@ -61,6 +65,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#project-timeline-milestones" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -92,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Tracker
+              Timeline
             
           </span>
         </div>
@@ -230,10 +239,19 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../timeline/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -244,6 +262,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -582,6 +601,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -600,9 +621,115 @@
   
 
 
-  <h1>Tracker</h1>
+<h1 id="project-timeline-milestones">Project Timeline &amp; Milestones</h1>
+<p>Interactive timeline visualization of project milestones and key deliverables for the Cloud &amp; Infrastructure Team.</p>
+<div class="timeline-controls">
+    <div class="filter-buttons">
+        <button class="filter-btn active" data-team="all">All Teams</button>
+        <button class="filter-btn" data-team="finops">CEC FINOPS</button>
+        <button class="filter-btn" data-team="cloud-native">CLOUD NATIVE</button>
+        <button class="filter-btn" data-team="tpv">TPV</button>
+        <button class="filter-btn" data-team="slingshot">CEC SLINGSHOT</button>
+        <button class="filter-btn" data-team="italy-devops">ITALY DEVOPS</button>
+    </div>
+    <div class="view-toggle">
+        <button class="view-btn active" data-view="timeline">Timeline View</button>
+        <button class="view-btn" data-view="gantt">Gantt View</button>
+    </div>
+</div>
 
-<iframe width="700" height="900" frameborder="0" scrolling="no" src="https://skyglobal.sharepoint.com/sites/TechnologyProducts2/_layouts/15/Doc.aspx?sourcedoc={ebe934a1-dae2-48b8-8c3f-ad12300b72fb}&action=embedview&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
+<div class="timeline-container">
+    <div class="timeline" id="project-timeline">
+        <!-- Timeline items will be dynamically generated -->
+    </div>
+</div>
+
+<div class="milestone-summary">
+    <div class="summary-cards">
+        <div class="summary-card">
+            <div class="card-icon">🎯</div>
+            <div class="card-content">
+                <h3>Active Projects</h3>
+                <span class="metric-value" id="active-projects">12</span>
+            </div>
+        </div>
+        <div class="summary-card">
+            <div class="card-icon">⏰</div>
+            <div class="card-content">
+                <h3>Upcoming Milestones</h3>
+                <span class="metric-value" id="upcoming-milestones">8</span>
+            </div>
+        </div>
+        <div class="summary-card">
+            <div class="card-icon">✅</div>
+            <div class="card-content">
+                <h3>Completed This Month</h3>
+                <span class="metric-value" id="completed-month">15</span>
+            </div>
+        </div>
+        <div class="summary-card">
+            <div class="card-icon">🚨</div>
+            <div class="card-content">
+                <h3>At Risk</h3>
+                <span class="metric-value" id="at-risk">3</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ## Key Milestones by Quarter
+
+### Q4 2025
+- **Cloud Migration Phase 2** - December 2025
+- **FinOps Cost Optimization** - November 2025  
+- **Security Compliance Audit** - October 2025
+
+### Q1 2026
+- **Italy Infrastructure Upgrade** - March 2026
+- **Slingshot Platform v2.0** - February 2026
+- **TPV Automation Framework** - January 2026
+
+## Project Status Legend
+
+<div class="status-legend">
+    <div class="legend-item">
+        <span class="status-dot completed"></span>
+        <span>Completed</span>
+    </div>
+    <div class="legend-item">
+        <span class="status-dot completed"></span>
+        <span>In Progress</span>
+    </div>
+    <div class="legend-item">
+        <span class="status-dot completed"></span>
+        <span>Planned</span>
+    </div>
+    <div class="legend-item">
+        <span class="status-dot completed"></span>
+        <span>At Risk</span>
+    </div>
+    <div class="legend-item">
+        <span class="status-dot completed"></span>
+        <span>Delayed</span>
+    </div>
+</div>
+
+## Quick Actions
+
+<div class="quick-actions">
+    <button class="action-btn" onclick="addMilestone()">
+        <i class="fas fa-plus"></i> Add Milestone
+    </button>
+    <button class="action-btn" onclick="exportTimeline()">
+        <i class="fas fa-download"></i> Export Timeline
+    </button>
+    <button class="action-btn" onclick="refreshData()">
+        <i class="fas fa-sync"></i> Refresh Data
+    </button>
+</div>
+
+<script src="../assets/js/timeline.js"></script>
+<link rel="stylesheet" href="../assets/css/timeline.css"> -->
 
 
 
