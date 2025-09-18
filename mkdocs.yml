@@ -5,9 +5,11 @@ theme:
   favicon: assets/images/logo.png
 nav:
   - Home: index.md
+  - Timeline: timeline.md
   - Team:
     - Technology Products:
       - Overview: team/details.md
+      - Important Links: team/links.md
       - Tickets: team/tickets.md
       - Leave Tracker: team/leave-tracker.md
     - Italy Infra: team/italy-infra.md
@@ -16,6 +18,10 @@ nav:
   - Documents: documents.md
   - Org Chart: orgchart.md
   - Newsletter: newsletter.md
+
+extra_css:
+  - assets/css/custom-theme.css
+  - assets/css/timeline.css
 
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/chart.js    # External library via CDN
