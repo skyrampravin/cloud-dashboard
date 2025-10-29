@@ -8,7 +8,7 @@ Essential resources and documentation for the Cloud & Infrastructure Team.
 - [Comcast Workday](https://wd5.myworkday.com/comcast/d/pex/home.htmld) - Comcast Workday
 - [uniFLOW](https://ent-print-comcast.us.uniflowonline.com/Login?ReturnUrl=%2F&#Dashboard/) - uniFLOW Online Login
 - [Mediassist](https://portal.mediassist.in/home.aspx) - MediAssist login
-- [ADP]() - ADP login
+- [ADP](https://launcher.myapps.microsoft.com/api/signin/89b56232-e706-41d1-82dc-aa33a1da682a?tenantId=906aefe9-76a7-4f65-b82d-5ec20775d5aa&RelayState=https://fed.adp.com/saml/fedlanding.html?TWFM) - ADP login
 
 
 ### SKY Italy Devops 

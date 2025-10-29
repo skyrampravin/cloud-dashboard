@@ -1,0 +1,191 @@
+{
+  "milestones": [
+    {
+      "id": 1,
+      "title": "Cloud Migration Phase 1 Completion",
+      "description": "Successfully migrated 50% of applications to AWS cloud infrastructure with zero downtime.",
+      "date": "2025-08-15",
+      "team": "cloud-native",
+      "status": "completed",
+      "priority": "high",
+      "assignee": "Prasanth Anandan",
+      "project": "Cloud Migration",
+      "dependencies": [],
+      "tags": ["aws", "migration", "infrastructure"]
+    },
+    {
+      "id": 2,
+      "title": "FinOps Cost Optimization Initiative",
+      "description": "Implement automated cost monitoring and optimization across all cloud resources.",
+      "date": "2025-09-30",
+      "team": "finops",
+      "status": "in-progress",
+      "priority": "high",
+      "assignee": "Kumanan Gunasekaran",
+      "project": "Cost Optimization",
+      "dependencies": [1],
+      "tags": ["finops", "cost-optimization", "automation"]
+    },
+    {
+      "id": 3,
+      "title": "TPV Automation Framework Setup",
+      "description": "Deploy automated testing framework for product validation processes.",
+      "date": "2025-10-15",
+      "team": "tpv",
+      "status": "planned",
+      "priority": "medium",
+      "assignee": "Sebi Sebastian",
+      "project": "TPV Enhancement",
+      "dependencies": [],
+      "tags": ["testing", "automation", "validation"]
+    },
+    {
+      "id": 4,
+      "title": "Slingshot Platform v2.0 Release",
+      "description": "Major platform upgrade with enhanced features and improved performance.",
+      "date": "2025-11-20",
+      "team": "slingshot",
+      "status": "in-progress",
+      "priority": "high",
+      "assignee": "Nivas Devendiran",
+      "project": "Slingshot Platform",
+      "dependencies": [2, 3],
+      "tags": ["platform", "upgrade", "performance"]
+    },
+    {
+      "id": 5,
+      "title": "Italy Infrastructure Monitoring",
+      "description": "Deploy comprehensive monitoring solution for Italy-based infrastructure.",
+      "date": "2025-10-01",
+      "team": "italy-devops",
+      "status": "at-risk",
+      "priority": "high",
+      "assignee": "Agilan Kaamash",
+      "project": "Italy Infrastructure",
+      "dependencies": [],
+      "tags": ["monitoring", "infrastructure", "italy"]
+    },
+    {
+      "id": 6,
+      "title": "Security Compliance Audit",
+      "description": "Complete annual security compliance audit and remediation.",
+      "date": "2025-12-10",
+      "team": "cloud-native",
+      "status": "planned",
+      "priority": "critical",
+      "assignee": "Bhargav Mannem",
+      "project": "Security Compliance",
+      "dependencies": [1, 5],
+      "tags": ["security", "compliance", "audit"]
+    },
+    {
+      "id": 7,
+      "title": "DevOps Pipeline Optimization",
+      "description": "Optimize CI/CD pipelines for faster deployment cycles.",
+      "date": "2025-09-25",
+      "team": "italy-devops",
+      "status": "in-progress",
+      "priority": "medium",
+      "assignee": "Rampravin A R",
+      "project": "Pipeline Enhancement",
+      "dependencies": [],
+      "tags": ["devops", "ci-cd", "optimization"]
+    },
+    {
+      "id": 8,
+      "title": "Cloud Native Architecture Review",
+      "description": "Comprehensive review and optimization of cloud-native architecture.",
+      "date": "2026-01-15",
+      "team": "cloud-native",
+      "status": "planned",
+      "priority": "medium",
+      "assignee": "Prasanth Anandan",
+      "project": "Architecture Review",
+      "dependencies": [4, 6],
+      "tags": ["architecture", "cloud-native", "review"]
+    },
+    {
+      "id": 9,
+      "title": "Multi-Cloud Strategy Implementation",
+      "description": "Implement multi-cloud strategy with Azure and GCP integration.",
+      "date": "2026-02-28",
+      "team": "cloud-native",
+      "status": "planned",
+      "priority": "high",
+      "assignee": "Bhargav Mannem",
+      "project": "Multi-Cloud Initiative",
+      "dependencies": [8],
+      "tags": ["multi-cloud", "azure", "gcp"]
+    },
+    {
+      "id": 10,
+      "title": "Team Skill Development Program",
+      "description": "Launch comprehensive skill development program for emerging technologies.",
+      "date": "2025-11-01",
+      "team": "finops",
+      "status": "planned",
+      "priority": "medium",
+      "assignee": "Nishanth Krishnan",
+      "project": "Team Development",
+      "dependencies": [],
+      "tags": ["training", "skills", "development"]
+    }
+  ],
+  "teams": {
+    "finops": {
+      "name": "CEC FINOPS",
+      "color": "#28a745",
+      "lead": "Kumanan Gunasekaran",
+      "members": ["Kumanan Gunasekaran", "Nishanth Krishnan"]
+    },
+    "cloud-native": {
+      "name": "CLOUD NATIVE",
+      "color": "#17a2b8",
+      "lead": "Prasanth Anandan",
+      "members": ["Prasanth Anandan", "Bhargav Mannem"]
+    },
+    "tpv": {
+      "name": "TPV",
+      "color": "#ffc107",
+      "lead": "Sebi Sebastian",
+      "members": ["Sebi Sebastian"]
+    },
+    "slingshot": {
+      "name": "CEC SLINGSHOT",
+      "color": "#dc3545",
+      "lead": "Nivas Devendiran",
+      "members": ["Nivas Devendiran", "Maheswaran Gopinath", "Saranya Manikkavaradhan", "Vasanth Kavimani"]
+    },
+    "italy-devops": {
+      "name": "ITALY DEVOPS",
+      "color": "#6f42c1",
+      "lead": "Agilan Kaamash",
+      "members": ["Agilan Kaamash", "Rampravin A R"]
+    }
+  },
+  "projects": {
+    "Cloud Migration": {
+      "description": "Migration of legacy applications to cloud infrastructure",
+      "startDate": "2025-06-01",
+      "endDate": "2025-12-31",
+      "budget": "$500,000",
+      "status": "in-progress"
+    },
+    "Cost Optimization": {
+      "description": "Cloud cost optimization and FinOps implementation",
+      "startDate": "2025-07-01",
+      "endDate": "2025-11-30",
+      "budget": "$100,000",
+      "status": "in-progress"
+    },
+    "Slingshot Platform": {
+      "description": "Platform enhancement and feature development",
+      "startDate": "2025-08-01",
+      "endDate": "2026-01-31",
+      "budget": "$750,000",
+      "status": "in-progress"
+    }
+  },
+  "lastUpdated": "2025-09-16T10:00:00Z",
+  "version": "1.0"
+}

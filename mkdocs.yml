@@ -5,16 +5,15 @@ theme:
   favicon: assets/images/logo.png
 nav:
   - Home: index.md
-  - Timeline: timeline.md
   - Team:
     - Technology Products:
       - Overview: team/details.md
       - Important Links: team/links.md
       - Tickets: team/tickets.md
       - Leave Tracker: team/leave-tracker.md
+      - Updates: team/updates.md
     - Italy Infra: team/italy-infra.md
     - Network: team/network.md
-  - Updates: updates.md
   - Documents: documents.md
   - Org Chart: orgchart.md
   - Newsletter: newsletter.md
